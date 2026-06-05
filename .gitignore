@@ -1,0 +1,19 @@
+# Dependencies - DO NOT UPLOAD TO GITHUB
+node_modules
+.pnp
+.pnp.js
+
+# Production build outputs
+dist
+build
+
+# Local environment configuration variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# System files
+.DS_Store
+Thumbs.db
