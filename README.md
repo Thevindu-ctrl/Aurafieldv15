@@ -1,4 +1,4 @@
-# Aurafield v15 — The Living Procedural Universe
+# Aurafield v12 — The Living Procedural Universe
 
 A high-performance, audio-reactive 3D engine built on WebGL, showcasing advanced procedural asset generation, real-time audio signal tracking, and automated deployment architectures. Aurafield renders dynamic macro-environments and particle systems that morph dynamically to audio signals.
 
