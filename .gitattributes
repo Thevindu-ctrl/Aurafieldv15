@@ -1,0 +1,13 @@
+# Tell GitHub to treat the assets folder as data/vendored assets, ignoring them in the language bar
+public/**/* linguist-vendored
+src/assets/**/* linguist-vendored
+
+# Explicitly ignore common 3D formats or data dumps from stats
+*.glb linguist-vendored
+*.gltf linguist-vendored
+*.hdr linguist-vendored
+*.blend linguist-vendored
+
+# Force GitHub to recognize your actual project language
+*.jsx linguist-detectable
+*.js linguist-detectable
