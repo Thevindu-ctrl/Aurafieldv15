@@ -44,7 +44,7 @@ Automated via a custom GitHub Actions pipeline. Due to heavy high-fidelity textu
 > ⚠️ **Desktop Optimization Recommended:** Because the movement vectors are currently bound to physical hardware keyboard hooks (`WASD`), exploration is optimized for desktop browsers. 
 > 
 > * **iOS / Android Experience:** Touch interfaces currently support camera rotation and viewing orientation via swipe controls.
-> * **Next-Gen Patch Plan:** Implementation of virtual dual-stick on-screen overlay controllers (`nipplejs` integration) to bring full translation capabilities to mobile touch surfaces is currently slated for the next development sprint.
+> * **Next-Gen Patch Plan:** Implementation of virtual dual-stick on-screen overlay controllers (`nipplejs` integration) to bring full translation capabilities to mobile touch surfaces is currently slated for the next development sprint.(Aurafieldv15)
 
 ---
 
