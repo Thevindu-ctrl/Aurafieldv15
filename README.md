@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# Aurafield v15 — The Living Procedural Universe
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A high-performance, audio-reactive 3D engine built on WebGL, showcasing advanced procedural asset generation, real-time audio signal tracking, and automated deployment architectures. Aurafield renders dynamic macro-environments and particle systems that morph dynamically to audio signals.
 
-## Available Scripts
+ **[Experience the Live Simulation Here](https://thevindu-ctrl.github.io/Aurafieldv15/)**
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Tech Stack & Core Engine Infrastructure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This platform transitions traditional heavy 3D rendering pipelines into fluid, browser-native experiences by leveraging modern frontend graphics systems:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* **Graphics Engine:** Three.js via `@react-three/fiber` (R3F) for reactive component-driven 3D scene graphs.
+* **Component Toolkit:** `@react-three/drei` for optimized asset loading configurations, camera controllers, and billboarded UI rendering.
+* **Build System:** Vite — configured for high-speed module replacement and production asset minification.
+* **Automation:** GitHub Actions (`deploy.yml`) custom runner pipeline translating local code changes into live cloud deployments seamlessly.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Core Engineering Features
 
-### `npm run build`
+### 1. Procedural Engine Core
+Instead of relying purely on static environments, the engine uses custom mathematical noise configurations and particle arrays to generate celestial structures, planet surfaces (like the Volcanic and Bloom variants), and living AI particle swarms in real time.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 2. Audio Signal Processing & Tracking
+Features integrated audio analytics calculating frequency distributions and asset scaling:
+* **BPM & Mood Analysis:** Translates amplitude spikes into real-time visual modifications.
+* **Frequency Mapping:** Isolates bass, mid-tones, and high frequencies to govern particle speed, global illumination brightness, and shader distortion vectors dynamically.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 3. CI/CD Architecture
+Automated via a custom GitHub Actions pipeline. Due to heavy high-fidelity texture maps and `.hdr` environment maps (~176 MB total footprint), the pipeline optimizes and packages asset bundles into a static production build deployed directly to GitHub Pages runners.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Navigation & System Controls
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+| Input / Control | Action Performed |
+| :--- | :--- |
+| **W / S / A / D** | Forward / Backward / Left / Right Translation |
+| **Mouse / Trackpad Movement** | Look Orientation / Camera Aim Control |
+| **Audio Source Input** | Drives global physics constants, lighting shifts, and particle velocities |
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Mobile & Touchscreen Accessibility Note
+> ⚠️ **Desktop Optimization Recommended:** Because the movement vectors are currently bound to physical hardware keyboard hooks (`WASD`), exploration is optimized for desktop browsers. 
+> 
+> * **iOS / Android Experience:** Touch interfaces currently support camera rotation and viewing orientation via swipe controls.
+> * **Next-Gen Patch Plan:** Implementation of virtual dual-stick on-screen overlay controllers (`nipplejs` integration) to bring full translation capabilities to mobile touch surfaces is currently slated for the next development sprint.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Local Development Setup
 
-## Learn More
+To run this engine locally on your machine for testing or expansion:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/Thevindu-ctrl/Aurafieldv15.git](https://github.com/Thevindu-ctrl/Aurafieldv15.git)
+   cd Aurafieldv15
